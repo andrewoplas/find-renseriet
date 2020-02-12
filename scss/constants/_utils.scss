@@ -1,20 +1,15 @@
 @import './variables';
 
-.link {
-  color: $color-link;
-  text-decoration: underline;
-}
-
 .section-bg-primary {
   background-color: $color-primary;
 }
 
 .section-bg-gray {
-  background-color: $color-gray-light;
+  background-color: $color-primary-gray;
 }
 
-.section-bg-violet {
-  background-color: #f0f7fd;
+.section-bg-yellow {
+  background-color: #fff6d9;
 }
 
 .rotate {
