@@ -1,6 +1,6 @@
 $(function() {
   // Initialize navbar sticky
-  const sticky = xs ? 30 : 117;
+  const sticky = 0;
   const onScroll = function() {
     if (window.pageYOffset >= sticky) {
       $('#sticky-navbar').addClass('active');
