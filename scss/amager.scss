@@ -51,6 +51,10 @@ $nav-height-xs: 80px;
       text-decoration: none;
       position: relative;
 
+      &:last-child {
+        margin-right: 0;
+      }
+
       &:before {
         content: '';
         position: absolute;
