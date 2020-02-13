@@ -11,11 +11,15 @@
 
 .container {
   max-width: 1300px;
+
+  @include media-breakpoint-only(xl) {
+    max-width: 1600px;
+  }
 }
 
 // Navigation Section
 $nav-height: 100px;
-$nav-height-xs: 70px;
+$nav-height-xs: 80px;
 .nav-section {
   z-index: 100;
   width: 100vw;
@@ -24,7 +28,7 @@ $nav-height-xs: 70px;
   transition: 250ms;
 
   @include media-breakpoint-down(sm) {
-    padding: 16px 5px;
+    padding: 16px 30px;
   }
 
   &.active {
@@ -46,6 +50,10 @@ $nav-height-xs: 70px;
       line-height: 27px;
       text-decoration: none;
       position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       &:before {
         content: '';
@@ -156,7 +164,7 @@ $nav-height-xs: 70px;
 // [Section 1] Main Section
 .main-section {
   display: flex;
-  padding-top: $nav-height;
+  padding: $nav-height 30px 30px;
   min-height: 600px;
 
   @include media-breakpoint-down(sm) {
@@ -175,11 +183,12 @@ $nav-height-xs: 70px;
     .title,
     select,
     button {
-      width: 460px;
+      width: 100%;
+      max-width: 460px;
 
       &.title {
         margin-left: 17px;
-        width: 477px;
+        max-width: 477px;
       }
     }
 
@@ -191,6 +200,9 @@ $nav-height-xs: 70px;
     }
 
     .select {
+      width: 100%;
+      max-width: 460px;
+
       select {
         margin-top: 16px;
         padding: 22px 20px;
@@ -252,9 +264,9 @@ $nav-height-xs: 70px;
 .ranking-section {
   padding: 90px 6% 0;
 
-  @include media-breakpoint-down(md) {
-    padding-left: 15px;
-    padding-right: 15px;
+  @include media-breakpoint-down(lg) {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .title {
@@ -289,6 +301,10 @@ $nav-height-xs: 70px;
           position: absolute;
           right: 42px;
           top: -18px;
+
+          @include media-breakpoint-down(sm) {
+            top: -40px;
+          }
         }
       }
 
@@ -394,6 +410,11 @@ $nav-height-xs: 70px;
   margin-top: 115px;
   margin-bottom: 500px;
 
+  &.container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @include media-breakpoint-down(md) {
     margin-bottom: 100px;
   }
@@ -421,6 +442,8 @@ $nav-height-xs: 70px;
 
 // Footer
 footer {
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 45px;
 
   p {
