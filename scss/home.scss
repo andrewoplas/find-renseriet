@@ -405,7 +405,52 @@ $nav-height-xs: 80px;
   }
 }
 
-// [Section 3] Description Section
+// [Section 3] More info Section
+.more-info {
+  padding: 100px 30px;
+
+  h3.title {
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  h4.title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  h4:not(.title) {
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  .description {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 32px;
+
+    &.spacing-bottom {
+      margin-bottom: 50px;
+    }
+  }
+
+  .what-is-dry-cleaning {
+    i {
+      margin-top: 30px;
+      font-size: 50px;
+      color: $color-primary;
+    }
+  }
+}
+
+// [Section 4] Description Section
 .description-section {
   margin-top: 115px;
   margin-bottom: 500px;
